@@ -5,7 +5,7 @@ class DishesController < ApplicationController
   def index
     @dishes = Dish.all
 
-    render json: @dishes
+    render json: @dishes, include: [:meal]
   end
 
   # GET /dishes/1
@@ -36,6 +36,7 @@ class DishesController < ApplicationController
   # DELETE /dishes/1
   def destroy
     @dish.destroy
+    render json: @dish
   end
 
   private
