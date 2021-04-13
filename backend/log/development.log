@@ -156,3 +156,17 @@ Migrating to CreateDishes (20210412201226)
   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
   [1m[36mDish Load (0.9ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/dishes" for ::1 at 2021-04-13 15:36:02 -0500
+  [1m[35m (17.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#index as */*
+  [1m[36mDish Load (10.6ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (1.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 108ms (Views: 48.9ms | ActiveRecord: 22.5ms | Allocations: 16669)
+
+
