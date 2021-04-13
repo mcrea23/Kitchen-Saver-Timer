@@ -47,4 +47,4 @@ class Form extends Component{
   }
 }
 
-export default connect (null, {addMeal})(Form)
+export default connect (null, {addDish})(Form)

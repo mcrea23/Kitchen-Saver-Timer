@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Home from './components/home';
-import connect from 'react-redux';
+import {connect} from 'react-redux';
 import {getDishes} from './actions';
 import About from './components/about';
 import Index from './components/index';
@@ -21,16 +21,26 @@ class App extends Component {
         <h3>LOADING...</h3>
       )
     }
-  }
 
   return(
       <Router>
+      <Switch>
         <Route exact path="/" component={Home}/>
+        <Route exact path="/about" component={About}/>
+        <Route exact path="/dishes" component={Index}/>
+        <Route exact path="/dishes/new" component={Form}/>
+        <Route component={Error}/>
+        </Switch>
         </Router>
     )
   }
+}
 
+const mapStateToProps=state => {
+  return{
+    loading: state.loading
   }
+}
 
 
-export default App;
+export default connect(mapStateToProps, {getDishes})(App)

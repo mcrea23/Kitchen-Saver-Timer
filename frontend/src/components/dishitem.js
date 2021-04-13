@@ -20,4 +20,4 @@ class DishItem extends Component{
   }
 }
 
-export default connect (null, {deleteMeal})(DishItem)
+export default connect (null, {deleteDish})(DishItem)
