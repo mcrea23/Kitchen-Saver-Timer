@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-
+import {deleteDish} from '../actions/index'
+//e6?
 class DishItem extends Component{
   render(){
     const {name, meal, notes, id}=this.props
@@ -14,6 +15,9 @@ class DishItem extends Component{
           <br />
           <button className="button-color" onClick={() => this.props.deleteDish(id,this.props.history)}>DONE</button>
       </div>
+    </div>
     )
   }
 }
+
+export default connect (null, {deleteMeal})(DishItem)

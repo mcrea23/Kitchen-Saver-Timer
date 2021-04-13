@@ -23,7 +23,7 @@ export const addDish=(dish, history) => {
     .then(dish => {
       dispatch({ type: "ADD_DISH", dish})
       history.push("/dishes")
-    }
+    })
   }
 }
 
