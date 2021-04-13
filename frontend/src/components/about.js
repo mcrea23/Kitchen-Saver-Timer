@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 
 
 class About extends Component {
@@ -13,3 +13,5 @@ class About extends Component {
     )
   }
 }
+
+export default About;
