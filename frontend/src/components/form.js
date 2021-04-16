@@ -32,6 +32,12 @@ class Form extends Component{
             <br />
             <br />
             <label htmlFor="meal_attributes"> Meal </label>
+            <select>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="other">Other</option>
+            </select>
             <input className="inputs" type="text" id="meal_attributes" name="meal_attributes" value={this.state.meal_attributes} onChange={this.handleChange}/>
             <br />
             <br />

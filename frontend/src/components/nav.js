@@ -1,11 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {makeStyles} from '@material/ui/core/styles';
+import {makeStyles} from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
-import DoneAllIcon from '@material-ui/icons/DoneAll';
+import KitchenIcon from '@material-ui/icons/Kitchen';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
 
@@ -36,6 +36,7 @@ export default function IconBreadcrumbs(){
   return(
     <Breadcrumbs aria-label="breadcrumbs" className={classes.breadcrumb}> 
     <Link color="inherit" to= "/" className={classes.link}>
+    <HomeIcon className={classes.icon}/>
       Home
     </Link>
     <Link color="inherit" to="/about" className={classes.link}>
@@ -43,7 +44,7 @@ export default function IconBreadcrumbs(){
       About
     </Link>
     <Link color="inherit" to="/dishes" className={classes.link}>
-      <DoneAllIcon className={classes.icon}/>
+      <KitchenIcon className={classes.icon}/>
       Dishes
     </Link>
     <Link color="inherit" to="/dishes/new" className={classes.link}>

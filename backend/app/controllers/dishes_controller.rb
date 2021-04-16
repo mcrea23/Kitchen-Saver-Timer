@@ -4,7 +4,6 @@ class DishesController < ApplicationController
   # GET /dishes
   def index
     @dishes = Dish.all
-
     render json: @dishes, include: [:meal]
   end
 

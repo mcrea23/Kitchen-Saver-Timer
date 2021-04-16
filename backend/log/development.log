@@ -170,3 +170,692 @@ Processing by DishesController#index as */*
 Completed 200 OK in 108ms (Views: 48.9ms | ActiveRecord: 22.5ms | Allocations: 16669)
 
 
+Started GET "/dishes" for ::1 at 2021-04-13 16:05:47 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (1.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 15.2ms | Allocations: 4968)
+
+
+Started GET "/dishes" for ::1 at 2021-04-13 16:20:28 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.9ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 148ms (Views: 147.5ms | ActiveRecord: 128.6ms | Allocations: 5022)
+
+
+Started GET "/dishes" for ::1 at 2021-04-13 16:21:04 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.8ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 1.1ms | Allocations: 2904)
+
+
+Started GET "/dishes" for ::1 at 2021-04-13 16:22:41 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.8ms | Allocations: 2904)
+
+
+Started GET "/dishes" for ::1 at 2021-04-14 13:20:09 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (6.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (5.7ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 104ms (Views: 96.8ms | ActiveRecord: 33.4ms | Allocations: 4945)
+
+
+Started GET "/dishes" for ::1 at 2021-04-14 13:21:26 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (1.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 1.8ms | Allocations: 2883)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 15:15:09 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (9.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (2.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 431ms (Views: 407.4ms | ActiveRecord: 93.9ms | Allocations: 5001)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 15:18:04 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.9ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.5ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 1.4ms | Allocations: 2883)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 15:21:31 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.6ms | Allocations: 2883)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 15:21:44 -0500
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.6ms | Allocations: 2881)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-04-15 15:21:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/dishes" for ::1 at 2021-04-15 15:24:55 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.7ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 1.3ms | Allocations: 3091)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 15:28:48 -0500
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.6ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 50ms (Views: 21.7ms | ActiveRecord: 17.6ms | Allocations: 12966)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 15:28:53 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.7ms | Allocations: 2904)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 15:37:56 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 7.6ms | Allocations: 4967)
+
+
+Started POST "/dishes" for ::1 at 2021-04-15 15:38:02 -0500
+Processing by DishesController#create as JSON
+  Parameters: {"dish"=>{"name"=>" BBQ", "meal_attributes"=>" Dinner", "notes"=>" jb"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 605)
+
+
+  
+NoMethodError (undefined method `find_or_create_by' for nil:NilClass):
+  
+app/models/dish.rb:5:in `meal_attributes='
+app/controllers/dishes_controller.rb:18:in `create'
+Started GET "/dishes" for ::1 at 2021-04-15 15:38:14 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (7.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (3.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 15.4ms | ActiveRecord: 10.3ms | Allocations: 2903)
+
+
+Started POST "/dishes" for ::1 at 2021-04-15 15:38:29 -0500
+Processing by DishesController#create as JSON
+  Parameters: {"dish"=>{"name"=>" BBQh", "meal_attributes"=>" hhh", "notes"=>" hhhh"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 565)
+
+
+  
+NoMethodError (undefined method `find_or_create_by' for nil:NilClass):
+  
+app/models/dish.rb:5:in `meal_attributes='
+app/controllers/dishes_controller.rb:18:in `create'
+Started GET "/dishes" for ::1 at 2021-04-15 15:39:19 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.7ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 62ms (Views: 32.8ms | ActiveRecord: 9.2ms | Allocations: 12964)
+
+
+Started POST "/dishes" for ::1 at 2021-04-15 15:39:27 -0500
+Processing by DishesController#create as JSON
+  Parameters: {"dish"=>{"name"=>" BBQ", "meal_attributes"=>" Dinner", "notes"=>" 5666"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 605)
+
+
+  
+NoMethodError (undefined method `find_or_create_by' for nil:NilClass):
+  
+app/models/dish.rb:5:in `meal_attributes='
+app/controllers/dishes_controller.rb:18:in `create'
+Started GET "/dishes" for ::1 at 2021-04-15 15:39:59 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.9ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 1.3ms | Allocations: 2903)
+
+
+Started POST "/dishes" for ::1 at 2021-04-15 15:40:08 -0500
+Processing by DishesController#create as JSON
+  Parameters: {"dish"=>{"name"=>" BBQ", "meal_attributes"=>" Dinner", "notes"=>" ggg"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 573)
+
+
+  
+NoMethodError (undefined method `find_or_create_by' for nil:NilClass):
+  
+app/models/dish.rb:5:in `meal_attributes='
+app/controllers/dishes_controller.rb:18:in `create'
+Started GET "/dishes" for ::1 at 2021-04-15 15:42:49 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.6ms | Allocations: 2904)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 15:42:54 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (4.9ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 5.5ms | Allocations: 2883)
+
+
+Started POST "/dishes" for ::1 at 2021-04-15 15:43:01 -0500
+Processing by DishesController#create as JSON
+  Parameters: {"dish"=>{"name"=>" BBQ", "meal_attributes"=>" Dinner", "notes"=>" bh"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 564)
+
+
+  
+NoMethodError (undefined method `find_or_create_by' for nil:NilClass):
+  
+app/models/dish.rb:5:in `meal_attributes='
+app/controllers/dishes_controller.rb:18:in `create'
+Started POST "/dishes" for ::1 at 2021-04-15 15:55:22 -0500
+Processing by DishesController#create as JSON
+  Parameters: {"dish"=>{"name"=>" BBQ", "meal_attributes"=>" Dinner", "notes"=>" yum"}}
+  [1m[36mMeal Load (1.9ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."name" = $1 LIMIT $2[0m  [["name", " Dinner"], ["LIMIT", 1]]
+  ↳ app/models/dish.rb:5:in `meal_attributes='
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/dish.rb:5:in `meal_attributes='
+  [1m[36mMeal Create (14.6ms)[0m  [1m[32mINSERT INTO "meals" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", " Dinner"], ["created_at", "2021-04-15 20:55:22.311811"], ["updated_at", "2021-04-15 20:55:22.311811"]]
+  ↳ app/models/dish.rb:5:in `meal_attributes='
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/dish.rb:5:in `meal_attributes='
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dishes_controller.rb:20:in `create'
+  [1m[36mDish Create (6.8ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "notes", "meal_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", " BBQ"], ["notes", " yum"], ["meal_id", 4], ["created_at", "2021-04-15 20:55:22.336183"], ["updated_at", "2021-04-15 20:55:22.336183"]]
+  ↳ app/controllers/dishes_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dishes_controller.rb:20:in `create'
+Completed 201 Created in 76ms (Views: 1.4ms | ActiveRecord: 34.7ms | Allocations: 12576)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 16:13:21 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (1.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (3.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 102ms (Views: 101.2ms | ActiveRecord: 24.2ms | Allocations: 6037)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 16:14:08 -0500
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.9ms | Allocations: 3782)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 16:17:27 -0500
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.5ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 1.2ms | Allocations: 3768)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 16:17:32 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.7ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 1.3ms | Allocations: 3772)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 16:29:25 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (3.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 85ms (Views: 85.1ms | ActiveRecord: 19.2ms | Allocations: 5886)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 16:30:15 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.9ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (2.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 3.4ms | Allocations: 3772)
+
+
+Started GET "/meals" for ::1 at 2021-04-15 16:30:59 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 997)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 16:37:42 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (1.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 12.1ms | Allocations: 5834)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 16:38:05 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.5ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 1.4ms | Allocations: 3772)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 16:38:07 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 1.2ms | Allocations: 3772)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 16:38:11 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (2.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 3.0ms | Allocations: 3772)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 16:38:28 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.7ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 1.6ms | Allocations: 3772)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 16:41:09 -0500
+Processing by DishesController#index as */*
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1055)
+
+
+  
+NoMethodError (undefined method `name' for :meal:Symbol):
+  
+app/controllers/dishes_controller.rb:8:in `index'
+Started GET "/dishes" for ::1 at 2021-04-15 16:41:57 -0500
+Processing by DishesController#index as */*
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 619)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/dishes_controller.rb:8:in `index'
+Started GET "/dishes" for ::1 at 2021-04-15 16:42:15 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mMeal Load (0.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 26.7ms | Allocations: 7401)
+
+
+  
+NoMethodError (undefined method `serializable_hash' for "French Toast":String):
+  
+app/controllers/dishes_controller.rb:8:in `index'
+Started GET "/dishes" for ::1 at 2021-04-15 16:43:15 -0500
+Processing by DishesController#index as */*
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1006)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007f8ef48fa310>
+Did you mean?  try):
+  
+app/controllers/dishes_controller.rb:7:in `index'
+Started GET "/dishes" for ::1 at 2021-04-15 16:44:05 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" ORDER BY "dishes"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ (byebug):1:in `index'
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ (byebug):1:in `index'
+  [1m[36mCACHE Dish Load (0.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+  [1m[36mCACHE Dish Load (0.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" ORDER BY "dishes"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ (byebug):1:in `index'
+  [1m[36mCACHE Dish Load (0.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" ORDER BY "dishes"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ (byebug):1:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ (byebug):1:in `index'
+  [1m[36mMeal Load (0.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/controllers/dishes_controller.rb:8:in `index'
+Started GET "/dishes" for ::1 at 2021-04-15 16:49:57 -0500
+Completed 500 Internal Server Error in 352439ms (ActiveRecord: 8.4ms | Allocations: 394829)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/dishes_controller.rb:8:in `index'
+Started GET "/dishes" for ::1 at 2021-04-15 16:50:00 -0500
+Started GET "/dishes" for ::1 at 2021-04-15 16:50:00 -0500
+Processing by DishesController#index as */*
+Processing by DishesController#index as */*
+Processing by DishesController#index as */*
+  [1m[36mDish Load (22.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mMeal Load (36.9ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mDish Load (32.8ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mDish Load (30.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mMeal Load (19.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mMeal Load (15.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMeal Load (13.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 686ms (Views: 498.7ms | ActiveRecord: 165.9ms | Allocations: 5453888)
+
+
+  [1m[36mCACHE Meal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mMeal Load (30.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMeal Load (1.7ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+Completed 200 OK in 866ms (Views: 552.0ms | ActiveRecord: 308.3ms | Allocations: 6129984)
+
+
+Completed 200 OK in 870ms (Views: 592.3ms | ActiveRecord: 275.1ms | Allocations: 6170315)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 16:50:46 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mMeal Load (0.5ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+Completed 200 OK in 49ms (Views: 30.7ms | ActiveRecord: 8.0ms | Allocations: 16019)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 16:51:10 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mMeal Load (0.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 1.3ms | Allocations: 3793)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 19:42:02 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (1.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mMeal Load (0.5ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+Completed 200 OK in 72ms (Views: 71.3ms | ActiveRecord: 18.6ms | Allocations: 5858)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 19:48:07 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.7ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+Completed 200 OK in 24ms (Views: 24.0ms | ActiveRecord: 7.0ms | Allocations: 5856)
+
+
+Started GET "/dishes" for ::1 at 2021-04-15 20:05:32 -0500
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.6ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mMeal Load (0.5ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mCACHE Meal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:7:in `index'
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 8.8ms | Allocations: 5856)
+
+

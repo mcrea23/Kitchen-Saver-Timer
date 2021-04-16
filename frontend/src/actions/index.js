@@ -1,6 +1,6 @@
 export const getDishes=() => {
   return dispatch => {
-    dispatch({ type: "LOADINGGG"})
+    dispatch({ type: "LOADING"})
     fetch("http://localhost:3001/dishes")
     .then(resp => resp.json())
     .then(dishes => dispatch({ type: "SET_DISHES", dishes}))
@@ -11,7 +11,7 @@ export const getDishes=() => {
 export const addDish=(dish, history) => {
   return dispatch => {
     console.log(dish)
-    fetch("http:localhost:3001/dishes", {
+    fetch("http://localhost:3001/dishes", {
       method: "POST", 
       headers: {
         "Accept": "application/json",
