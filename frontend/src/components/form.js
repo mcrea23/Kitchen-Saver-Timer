@@ -31,14 +31,14 @@ class Form extends Component{
             id="name" name="name" value={this.state.name} onChange={this.handleChange}/>
             <br />
             <br />
-            <label htmlFor="meal_attributes"> Meal </label>
-            <select>
+            <label> Meal <br />
+            <select value={this.state.value} onChange={this.state.meal_attributes} onChange={this.handleChange}>
             <option value="breakfast">Breakfast</option>
             <option value="lunch">Lunch</option>
             <option value="dinner">Dinner</option>
-            <option value="other">Other</option>
+            <option value="other">Other</option> 
             </select>
-            <input className="inputs" type="text" id="meal_attributes" name="meal_attributes" value={this.state.meal_attributes} onChange={this.handleChange}/>
+            </label>
             <br />
             <br />
             <label htmlFor="notes"> Notes </label>

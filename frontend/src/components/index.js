@@ -6,7 +6,7 @@ import {deleteDish} from '../actions/index'
 class Index extends Component{
   render(){
     const dishes=this.props.dishes.map((dish, i) => 
-    <DishItem key={i} name={dish.name} meal={dish.meal_id} notes={dish.notes} id={dish.id} history={this.props.history}/>)
+    <DishItem key={i} name={dish.name} meal={dish.meal_id} notes={dish.notes} id={dish.id} deleteDish={deleteDish} history={this.props.history}/>)
     return(
       <div>
         {dishes}
