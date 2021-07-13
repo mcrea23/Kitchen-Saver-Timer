@@ -29,7 +29,7 @@ export const addDish=(dish, history) => {
 
 export const deleteDish=(id, history) => {
   return dispatch => {
-    fetch (`http:localhost:3001/dishes/${id}`, {
+    fetch (`http://localhost:3001/dishes/${id}`, {
       method: "DELETE", 
       headers: {
         "Accept": "application/json",

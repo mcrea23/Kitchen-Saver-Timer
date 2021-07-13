@@ -3,20 +3,26 @@ import {connect} from 'react-redux';
 import {addDish} from '../actions'
 
 class Form extends Component{
-  state = {
-    name: " ",
-    meal_attributes: " ",
-    notes: " "
+  constructor() {
+    super();
+    this.state = {
+      name: " ",
+      meal_id: "breakfast",
+      notes: " "
+    }
   }
 
+
   handleChange = e => {
+    console.log('hoops', e.target.value, e.target, e.target.name)
     this.setState ({
       [e.target.name]: e.target.value
     })
   }
 
   handleSubmit = e => {
-    e.preventDefault()
+    console.log(this.state)
+      e.preventDefault()
     this.props.addDish(this.state, this.props.history)
   }
 
@@ -32,11 +38,11 @@ class Form extends Component{
             <br />
             <br />
             <label> Meal <br />
-            <select value={this.state.value} onChange={this.state.meal_attributes} onChange={this.handleChange}>
-            <option value="breakfast">Breakfast</option>
-            <option value="lunch">Lunch</option>
-            <option value="dinner">Dinner</option>
-            <option value="other">Other</option> 
+            <select name='meal_id' value={this.state.value} onChange={this.handleChange}>
+            <option value="0">Breakfast</option>
+            <option value="1">Lunch</option>
+            <option value="2">Dinner</option>
+            <option value="3">Other</option> 
             </select>
             </label>
             <br />

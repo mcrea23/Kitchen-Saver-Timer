@@ -1,22 +1,16 @@
 .App {
+  width: 90%;
+  margin: auto;
   text-align: center;
-  font-family: Asap, sans-serif;
-  background-image: linear-gradient(
-    to bottom,
-    #ffd3bf,
-    #ffc6b7,
-    #ffb9b3,
-    #ffacb3,
-    #ffa0b6,
-    #ff97b9,
-    #ff8ebd,
-    #ff85c4,
-    #ff7cc8,
-    #ff72ce,
-    #ff69d4,
-    #fd60db
-  );
 }
+  /* Centered text */
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -44,6 +38,26 @@
   color: #61dafb;
 }
 
+.pages{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.photo{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -51,4 +65,5 @@
   to {
     transform: rotate(360deg);
   }
+  
 }
